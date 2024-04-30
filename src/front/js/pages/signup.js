@@ -8,7 +8,7 @@ export const Signup = () => {
 	return (
 		<div className="d-flex align-items-center flex-column">
 			<h1>Signup</h1>
-			<form className="col-6">
+			<form className="col-6" onSubmit={actions.handleSubmit}>
 				<div className="form-group mb-3">
 					<label for="exampleInputEmail1">Email address</label>
 					<input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"></input>
