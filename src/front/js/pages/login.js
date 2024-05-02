@@ -10,7 +10,8 @@ export const Login = () => {
 	const forward = useNavigate();
 	const token = sessionStorage.getItem("token");
 
-	const handleClickSubmit = () => {
+	const handleClickSubmit = (event) => {
+		event.preventDefault()
 		actions.handleLogin(email, password);
 	};
 
