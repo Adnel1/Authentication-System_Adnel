@@ -15,7 +15,7 @@ export const Login = () => {
 		actions.handleLogin(email, password);
 	};
 
-	if (store.token && store.token != "" && store.token != undefined) forward("/");
+	// if (store.token && store.token != "" && store.token != undefined) forward("/");
 
 	return (
 		<div className="d-flex align-items-center flex-column">
